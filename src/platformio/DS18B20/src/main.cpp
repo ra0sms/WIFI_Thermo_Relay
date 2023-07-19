@@ -6,20 +6,21 @@ June, 2022
 ra0sms@bk.ru
 */
 
-#include <OneWire.h>
-#include <DallasTemperature.h>
+
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 #include <DNSServer.h>
 #include <ESP8266mDNS.h>
 #include <EEPROM.h>
+#include <DallasTemperature.h>
+#include <OneWire.h>
  
 void getTemperature(); 
 
 #define ONE_WIRE_BUS 5
 
-const char *softAP_ssid = "ThermoRelay_sn001";
+const char *softAP_ssid = "ThermoRelay_sn005";
 const char *softAP_password = "1234567890";
 const char *myHostname = "esp8266";
  
